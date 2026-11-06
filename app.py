@@ -3,11 +3,15 @@
 from __future__ import annotations
 
 import io
+import sys
 from datetime import date
 from pathlib import Path
 
 import pandas as pd
 import streamlit as st
+
+# Allow `streamlit run app.py` from a fresh clone without installing the package.
+sys.path.insert(0, str(Path(__file__).parent / "src"))
 
 from project_health import charts
 from project_health.analysis import PortfolioAnalysis, analyze, rag_counts

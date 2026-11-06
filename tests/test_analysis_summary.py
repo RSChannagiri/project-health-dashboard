@@ -75,7 +75,7 @@ def test_executive_summary_content(analysis):
     # Red projects are listed before green ones in the scorecard.
     table = md.split("## Project scorecard")[1]
     assert table.index("🔴") < table.index("🟢")
-    assert "—" not in md  # house style: no em dashes
+    assert "\u2014" not in md  # house style: no em dashes
 
 
 def test_summary_handles_clean_portfolio(make):
