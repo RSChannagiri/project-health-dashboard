@@ -1,6 +1,5 @@
 # Project Health Dashboard
 
-[![CI](https://github.com/RSChannagiri/project-health-dashboard/actions/workflows/ci.yml/badge.svg)](https://github.com/RSChannagiri/project-health-dashboard/actions/workflows/ci.yml)
 ![Python 3.12](https://img.shields.io/badge/python-3.12-blue)
 ![License: MIT](https://img.shields.io/badge/license-MIT-green)
 
@@ -167,11 +166,10 @@ The suite covers:
 - **Validation:** every rule, with row-numbered messages, Excel sheet selection, unsupported files, and corrupt uploads.
 - **App smoke tests:** Streamlit `AppTest` runs the real `app.py` headless, switches projects, toggles charts, and checks that bad threshold settings show an error.
 
-GitHub Actions runs ruff and pytest on every push.
 
 ## Tech stack
 
-Python 3.12, pandas, Streamlit, Plotly, openpyxl, Faker, pytest, ruff, GitHub Actions.
+Python 3.12, pandas, Streamlit, Plotly, openpyxl, Faker, pytest, ruff.
 
 ## What I learned
 
