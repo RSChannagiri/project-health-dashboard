@@ -1,0 +1,8 @@
+Faker==40.44.0
+numpy==2.5.4
+openpyxl==3.1.5
+pandas==3.1.1
+plotly==7.1.0
+pytest==9.2.0
+ruff==0.17.4
+streamlit==1.67.0

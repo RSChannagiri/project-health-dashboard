@@ -1,0 +1,31 @@
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "project-health"
+version = "1.0.0"
+description = "Portfolio project health dashboard: earned value, critical path, RAG status, and executive summaries"
+readme = "README.md"
+license = "MIT"
+authors = [{ name = "Rachana Channagiri" }]
+requires-python = ">=3.12"
+dependencies = ["pandas", "plotly", "streamlit", "openpyxl", "faker"]
+
+[project.scripts]
+ph-sample = "project_health.sample_data:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src", "."]
+addopts = "-q"
+
+[tool.ruff]
+line-length = 100
+target-version = "py312"
+
+[tool.ruff.lint]
+select = ["E", "F", "W", "I", "B", "UP", "SIM", "RUF"]
