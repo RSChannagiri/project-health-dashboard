@@ -39,7 +39,7 @@ def weekly_load(
     if not records:
         return pd.DataFrame(columns=cols)
     df = pd.DataFrame(records, columns=["owner", "day"])
-    df["week_start"] = df["day"] - pd.to_timedelta(df["day"].dt.weekday, unit="D")
+    df["week_start"] = df["day"] - pd.to_timedelta(df["day"].dt.day_of_week, unit="D")
     out = df.groupby(["owner", "week_start"]).size().rename("task_days").reset_index()
     out["utilization"] = out["task_days"] / WORKDAYS_PER_WEEK
     return out[cols].sort_values(["owner", "week_start"]).reset_index(drop=True)
