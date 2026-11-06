@@ -1,0 +1,40 @@
+project_id,project_name,project_manager,task_id,task_name,owner,planned_start,planned_finish,actual_start,actual_finish,budget,percent_complete,actual_cost,dependencies
+PRJ-101,Patient Portal Upgrade,Lisa Hensley,T01,Stakeholder interviews,Noah Rhodes,2026-08-31,2026-09-09,2026-08-31,2026-09-09,32700.0,100.0,34169.07,
+PRJ-101,Patient Portal Upgrade,Lisa Hensley,T02,Requirements sign-off,Allison Hill,2026-09-10,2026-09-16,2026-09-10,2026-09-16,21800.0,100.0,22568.52,T01
+PRJ-101,Patient Portal Upgrade,Lisa Hensley,T03,UX wireframes,Cristian Santos,2026-09-17,2026-09-30,2026-09-17,2026-09-30,54500.0,100.0,54147.45,T02
+PRJ-101,Patient Portal Upgrade,Lisa Hensley,T04,API integration,Daniel Wagner,2026-09-17,2026-10-14,2026-09-17,2026-10-15,119900.0,100.0,123733.41,T02
+PRJ-101,Patient Portal Upgrade,Lisa Hensley,T05,Front-end build,Gabrielle Davis,2026-10-01,2026-10-30,2026-10-03,,109000.0,90.0,97485.25,T03
+PRJ-101,Patient Portal Upgrade,Lisa Hensley,T06,Security review,Noah Rhodes,2026-10-15,2026-10-24,2026-10-15,2026-10-24,43600.0,100.0,45960.42,T04
+PRJ-101,Patient Portal Upgrade,Lisa Hensley,T07,User acceptance testing,Allison Hill,2026-10-31,2026-11-13,,,54500.0,0.0,0.0,T05;T06
+PRJ-101,Patient Portal Upgrade,Lisa Hensley,T08,Training materials,Cristian Santos,2026-10-01,2026-10-10,2026-10-01,2026-10-10,27300.0,100.0,29385.7,T03
+PRJ-101,Patient Portal Upgrade,Lisa Hensley,T09,Go-live and hypercare,Daniel Wagner,2026-11-14,2026-11-23,,,43600.0,0.0,0.0,T07;T08
+PRJ-102,Data Warehouse Migration,Michele Williams,T01,Source system inventory,Connie Lawrence,2026-08-10,2026-08-21,2026-08-10,2026-08-24,14000.0,100.0,17758.32,
+PRJ-102,Data Warehouse Migration,Michele Williams,T02,Target schema design,Jamie Arnold,2026-08-22,2026-09-08,2026-08-23,2026-09-12,28000.0,100.0,34985.48,T01
+PRJ-102,Data Warehouse Migration,Michele Williams,T03,ETL pipeline build,Ryan Munoz,2026-09-09,2026-10-18,2026-09-10,2026-10-28,70100.0,100.0,85256.35,T02
+PRJ-102,Data Warehouse Migration,Michele Williams,T04,Historical data backfill,Cristian Santos,2026-10-19,2026-11-08,2026-10-19,,32700.0,45.0,18059.52,T03
+PRJ-102,Data Warehouse Migration,Michele Williams,T05,Data quality rules,Allison Hill,2026-09-09,2026-09-28,2026-09-09,2026-10-03,23400.0,100.0,29317.91,T02
+PRJ-102,Data Warehouse Migration,Michele Williams,T06,Reconciliation testing,Connie Lawrence,2026-11-09,2026-11-26,,,28000.0,0.0,0.0,T04;T05
+PRJ-102,Data Warehouse Migration,Michele Williams,T07,Report repointing,Jamie Arnold,2026-10-19,2026-11-01,2026-10-20,,18700.0,65.0,14117.67,T03
+PRJ-102,Data Warehouse Migration,Michele Williams,T08,Legacy decommission,Ryan Munoz,2026-11-27,2026-12-06,,,14000.0,0.0,0.0,T06;T07
+PRJ-103,Vendor Onboarding Automation,Dylan Miller,T01,Process mapping,Monica Herrera,2026-09-07,2026-09-16,2026-09-09,2026-09-22,49900.0,100.0,50842.21,
+PRJ-103,Vendor Onboarding Automation,Dylan Miller,T02,Vendor form redesign,Noah Rhodes,2026-09-17,2026-09-28,2026-09-17,2026-10-04,59900.0,100.0,63872.56,T01
+PRJ-103,Vendor Onboarding Automation,Dylan Miller,T03,Workflow configuration,Ryan Munoz,2026-09-29,2026-10-23,2026-09-29,,179700.0,85.0,154914.45,T02
+PRJ-103,Vendor Onboarding Automation,Dylan Miller,T04,VBA invoice macro retirement,Angie Henderson,2026-09-17,2026-09-24,2026-09-18,2026-09-28,39900.0,100.0,41252.34,T01
+PRJ-103,Vendor Onboarding Automation,Dylan Miller,T05,Approval routing rules,Daniel Wagner,2026-10-24,2026-11-06,2026-10-29,,89800.0,10.0,9545.58,T03
+PRJ-103,Vendor Onboarding Automation,Dylan Miller,T06,Pilot with finance team,Monica Herrera,2026-11-07,2026-11-18,,,69900.0,0.0,0.0,T04;T05
+PRJ-103,Vendor Onboarding Automation,Dylan Miller,T07,Rollout and comms,Noah Rhodes,2026-11-19,2026-11-25,,,39900.0,0.0,0.0,T06
+PRJ-104,Tableau Self-Service Rollout,Brian Ramirez,T01,License procurement,Gabrielle Davis,2026-08-03,2026-08-12,2026-08-03,2026-08-12,96000.0,100.0,90785.76,
+PRJ-104,Tableau Self-Service Rollout,Brian Ramirez,T02,Server setup,Cristian Santos,2026-08-13,2026-08-26,2026-08-13,2026-08-26,76800.0,100.0,75420.52,T01
+PRJ-104,Tableau Self-Service Rollout,Brian Ramirez,T03,Certified data sources,Ryan Munoz,2026-08-27,2026-09-20,2026-08-27,2026-09-20,102400.0,100.0,99829.86,T02
+PRJ-104,Tableau Self-Service Rollout,Brian Ramirez,T04,Dashboard templates,Abigail Shaffer,2026-09-21,2026-10-08,2026-09-21,2026-10-08,64000.0,100.0,59698.24,T03
+PRJ-104,Tableau Self-Service Rollout,Brian Ramirez,T05,Analyst training cohort 1,Jamie Arnold,2026-10-09,2026-10-18,2026-10-11,2026-10-20,38400.0,100.0,36392.08,T04
+PRJ-104,Tableau Self-Service Rollout,Brian Ramirez,T06,Analyst training cohort 2,Gabrielle Davis,2026-10-19,2026-10-28,2026-10-19,2026-10-29,38400.0,100.0,36992.31,T05
+PRJ-104,Tableau Self-Service Rollout,Brian Ramirez,T07,Governance playbook,Cristian Santos,2026-09-21,2026-10-02,2026-09-22,2026-10-03,32000.0,100.0,31119.14,T03
+PRJ-104,Tableau Self-Service Rollout,Brian Ramirez,T08,Adoption review,Ryan Munoz,2026-10-29,2026-11-02,2026-10-30,,19200.0,20.0,3601.75,T06;T07
+PRJ-105,Student Success CRM Pilot,Holly Wood,T01,Pilot charter,Allison Hill,2026-10-05,2026-10-09,2026-10-06,2026-10-10,21300.0,100.0,23983.59,
+PRJ-105,Student Success CRM Pilot,Holly Wood,T02,CRM sandbox setup,Cristian Santos,2026-10-10,2026-10-19,2026-10-10,2026-10-20,56800.0,100.0,59308.13,T01
+PRJ-105,Student Success CRM Pilot,Holly Wood,T03,Advisor journey design,Gabrielle Davis,2026-10-10,2026-10-23,2026-10-10,2026-10-24,49700.0,100.0,54528.58,T01
+PRJ-105,Student Success CRM Pilot,Holly Wood,T04,Data import mapping,Angie Henderson,2026-10-20,2026-11-04,2026-10-20,,71000.0,65.0,52443.79,T02
+PRJ-105,Student Success CRM Pilot,Holly Wood,T05,GenAI note summarizer prototype,Noah Rhodes,2026-10-24,2026-11-12,2026-10-25,,99400.0,25.0,26203.01,T02;T03
+PRJ-105,Student Success CRM Pilot,Holly Wood,T06,Advisor pilot,Allison Hill,2026-11-13,2026-12-03,,,85200.0,0.0,0.0,T04;T05
+PRJ-105,Student Success CRM Pilot,Holly Wood,T07,Pilot evaluation report,Cristian Santos,2026-12-04,2026-12-10,,,28400.0,0.0,0.0,T06

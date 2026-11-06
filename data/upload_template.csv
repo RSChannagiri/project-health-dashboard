@@ -1,0 +1,4 @@
+project_id,project_name,project_manager,task_id,task_name,owner,planned_start,planned_finish,budget,percent_complete,actual_cost,actual_start,actual_finish,dependencies
+P01,Example CRM Rollout,A. Manager,T1,Requirements,Owner One,2026-01-05,2026-01-16,10000,100,9500,2026-01-05,2026-01-15,
+P01,Example CRM Rollout,A. Manager,T2,Build,Owner Two,2026-01-19,2026-02-13,40000,50,22000,2026-01-20,,T1
+P01,Example CRM Rollout,A. Manager,T3,Go live,Owner One,2026-02-16,2026-02-20,5000,0,0,,,T2
